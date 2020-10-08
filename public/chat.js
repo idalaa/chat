@@ -1,6 +1,6 @@
 'use strict';
 
-const socket = io('http://http://10.114.32.15/');
+const socket = io('http://10.114.32.15/');
 
 document.querySelector('form').addEventListener('submit', (event) => {
   event.preventDefault();
