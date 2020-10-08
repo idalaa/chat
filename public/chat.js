@@ -1,6 +1,6 @@
 'use strict';
 
-const socket = io();
+const socket = io('http://http://10.114.32.15/');
 
 document.querySelector('form').addEventListener('submit', (event) => {
   event.preventDefault();
@@ -14,3 +14,4 @@ socket.on('chat message', (msg) => {
   item.innerHTML = msg;
   document.getElementById('messages').appendChild(item);
 });
+
